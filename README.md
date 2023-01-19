@@ -1,7 +1,6 @@
 # Socket Express
+
 ## Custom Socket with express
-
-
 
 this socket is use full for server node js
 
@@ -30,14 +29,14 @@ Usage Package Socket Ryan for server
 Start App:
 
 ```js
-const WebSocket = require('socket-ryan')
-const express = require('express')
-const http = require('http')
-const app = express()
-const server = http.createServer(app)
+const WebSocket = require('socket-ryan');
+const express = require('express');
+const http = require('http');
+const app = express();
+const server = http.createServer(app);
 ....
 
-const socket = new WebSocket(server)
+const socket = new WebSocket(server);
 app.io = socket.io
 ```
 
