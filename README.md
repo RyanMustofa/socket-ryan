@@ -12,7 +12,7 @@ this socket is use full for server node js
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v16+ to run.
+SocketRyan requires [Node.js](https://nodejs.org/) v16+ to run.
 
 Before install please create db for application
 
