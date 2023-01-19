@@ -1,0 +1,19 @@
+{
+  "name": "socket-ryan",
+  "version": "0.1.0",
+  "description": "websocket buatan ryan wkwkkwkw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RyanMustofa/socket-ryan"
+  },
+  "author": "ryanmustofa",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "socket.io": "^4.5.4"
+  }
+}
