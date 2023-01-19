@@ -1,3 +1,3 @@
-const key = "eg@fj932934ks==";
+const key = "eg@fj932934ks===";
 
 module.exports = key;
