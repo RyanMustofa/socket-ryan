@@ -1,3 +1,3 @@
-const key = "eg@fj932934ks===";
+const key = "ryan"
 
-module.exports = key;
+module.exports = key

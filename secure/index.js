@@ -1,5 +1,6 @@
 const jsonfile = require("jsonfile");
 const path = require("path");
+const generateToken = require("../helpers");
 
 async function verifySocketToken(socket, cb) {
 	let token = socket?.request?.headers?.bearertoken;
@@ -32,9 +33,7 @@ async function socketUtility(socket, token) {
 			_id: socket.id,
 		};
 		jsonfile.writeFileSync(files, data);
-		console.log("exist", _dat);
 	} else {
-		console.log("no", json);
 		let data = [...json];
 		data.push({
 			_id: socket.id,
