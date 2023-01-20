@@ -37,7 +37,31 @@ const server = http.createServer(app);
 ....
 
 const socket = new WebSocket(server);
-app.io = socket.io
+app.socket = socket
+
+// send spesific auth
+app.use('/send',(req,res) => {
+    let { app } = req
+    let send = app.socket.to(auth_code).send(event,data)
+    return res.send({
+        send,
+        message: 'Websocket Realtime'
+    })
+})
+
+// send broadcast message
+app.use('/broadcast',(req,res) => {
+    let { app } = req
+    let send = app.socket.broadcast(event,data)
+    return res.send({
+        send,
+        message: 'Websocket Realtime'
+    })
+})
+
+server.listen(3000,() => {
+    console.log('Server has runnng in port 3000')
+})
 ```
 
 ## License
